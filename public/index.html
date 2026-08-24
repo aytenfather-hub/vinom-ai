@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090d" />
+  <title>VINOM AI — Creative AI Studio</title>
+
+  <style>
+    :root {
+      --bg: #07080c;
+      --panel: #0d0f14;
+      --panel-2: #11141b;
+      --panel-3: #171a22;
+      --border: rgba(255,255,255,.09);
+      --border-strong: rgba(255,255,255,.15);
+      --text: #f7f7fa;
+      --muted: #8d92a3;
+      --muted-2: #626878;
+      --purple: #7657ff;
+      --purple-2: #9b82ff;
+      --blue: #4c9aff;
+      --green: #35d39a;
+      --red: #ff5f6d;
+      --shadow: 0 25px 70px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+      background:
+        radial-gradient(circle at 75% 5%, rgba(118,87,255,.11), transparent 28%),
+        radial-gradient(circle at 15% 90%, rgba(76,154,255,.06), transparent 25%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* =========================
+       APP SHELL
+    ========================= */
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .sidebar {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 250px;
+      background: rgba(8,9,13,.88);
+      backdrop-filter: blur(24px);
+      border-left: 1px solid var(--border);
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      padding: 18px 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 7px 10px 24px;
+    }
+
+    .brand-mark {
+      width: 37px;
+      height: 37px;
+      border-radius: 11px;
+      background:
+        linear-gradient(135deg, #8c73ff, #5c3cff);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 18px;
+      box-shadow: 0 8px 28px rgba(118,87,255,.35);
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    .brand-beta {
+      font-size: 9px;
+      color: #b7adff;
+      border: 1px solid rgba(118,87,255,.3);
+      background: rgba(118,87,255,.09);
+      border-radius: 20px;
+      padding: 3px 6px;
+      margin-right: auto;
+    }
+
+    .nav-title {
+      color: var(--muted-2);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 0 12px 8px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-item {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: #aeb3c1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 12px;
+      border-radius: 12px;
+      text-align: right;
+      transition: .2s ease;
+      font-size: 13px;
+    }
+
+    .nav-item:hover {
+      background: rgba(255,255,255,.045);
+      color: white;
+    }
+
+    .nav-item.active {
+      background:
+        linear-gradient(90deg, rgba(118,87,255,.18), rgba(118,87,255,.05));
+      color: white;
+      box-shadow: inset 0 0 0 1px rgba(118,87,255,.12);
+    }
+
+    .nav-icon {
+      width: 23px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .nav-badge {
+      margin-right: auto;
+      font-size: 9px;
+      color: #c6bdff;
+      background: rgba(118,87,255,.14);
+      border-radius: 20px;
+      padding: 3px 7px;
+    }
+
+    .sidebar-spacer {
+      flex: 1;
+    }
+
+    .pro-card {
+      border: 1px solid rgba(118,87,255,.2);
+      background:
+        linear-gradient(145deg, rgba(118,87,255,.12), rgba(118,87,255,.025));
+      border-radius: 15px;
+      padding: 13px;
+      margin: 10px 4px;
+    }
+
+    .pro-card strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .pro-card p {
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .upgrade-btn {
+      width: 100%;
+      border: 0;
+      border-radius: 9px;
+      background: linear-gradient(135deg,#7657ff,#6040e9);
+      color: white;
+      padding: 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .user-box {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+
+    .avatar {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg,#6c52ff,#2d74ff);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .user-info {
+      min-width: 0;
+    }
+
+    .user-info strong {
+      display: block;
+      font-size: 11px;
+    }
+
+    .user-info span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 9px;
+      margin-top: 2px;
+    }
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    .main {
+      margin-right: 250px;
+      width: calc(100% - 250px);
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 68px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(7,8,12,.78);
+      backdrop-filter: blur(20px);
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .workspace-name {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .workspace-status {
+      color: var(--green);
+      font-size: 9px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-right: 5px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 10px var(--green);
+    }
+
+    .top-actions {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .top-btn {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.025);
+      color: #b8bdca;
+      border-radius: 10px;
+      transition: .2s;
+    }
+
+    .top-btn:hover {
+      color: white;
+      background: rgba(255,255,255,.07);
+    }
+
+    .credits {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 11px;
+      color: #c3c7d2;
+      font-size: 10px;
+    }
+
+    .credit-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f6c84c;
+      box-shadow: 0 0 10px rgba(246,200,76,.5);
+    }
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .home {
+      max-width: 1320px;
+      margin: auto;
+      padding: 46px 34px 70px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 18px 0 35px;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border: 1px solid rgba(118,87,255,.2);
+      border-radius: 30px;
+      background: rgba(118,87,255,.07);
+      color: #b7aaff;
+      font-size: 10px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 4.5vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      font-weight: 850;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg,#ffffff,#a795ff,#71a7ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 17px auto 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       GENERATOR
+    ========================= */
+
+    .generator {
+      max-width: 920px;
+      margin: 0 auto 55px;
+      border: 1px solid var(--border-strong);
+      border-radius: 22px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .generator-top {
+      padding: 22px;
+      background: rgba(255,255,255,.015);
+    }
+
+    .prompt-area {
+      width: 100%;
+      min-height: 135px;
+      border: 0;
+      outline: none;
+      resize: vertical;
+      background: transparent;
+      color: white;
+      font-size: 15px;
+      line-height: 1.7;
+      direction: rtl;
+    }
+
+    .prompt-area::placeholder {
+      color: #666b79;
+    }
+
+    .generator-bottom {
+      border-top: 1px solid var(--border);
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tool-pill {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
+      color: #bfc3ce;
+      border-radius: 9px;
+      padding: 8px 10px;
+      font-size: 10px;
+      transition: .2s;
+    }
+
+    .tool-pill:hover {
+      background: rgba(255,255,255,.07);
+      color: white;
+    }
+
+    .tool-pill.active {
+      border-color: rgba(118,87,255,.4);
+      background: rgba(118,87,255,.12);
+      color: #d1c9ff;
+    }
+
+    .model-select {
+      border: 1px solid var(--border);
+      background: #11141b;
+      color: #d2d5dd;
+      border-radius: 9px;
+      padding: 8px 11px;
+      outline: none;
+      font-size: 10px;
+    }
+
+    .generate-btn {
+      margin-right: auto;
+      border: 0;
+      color: white;
+      background: linear-gradient(135deg,#7657ff,#5c3ce4);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 11px;
+      font-weight: 800;
+      box-shadow: 0 10px 28px rgba(118,87,255,.24);
+      transition: .2s;
+    }
+
+    .generate-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 35px rgba(118,87,255,.35);
+    }
+
+    /* =========================
+       QUICK TOOLS
+    ========================= */
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      font-size: 17px;
+      letter-spacing: -.4px;
+    }
+
+    .section-head p {
+      color: var(--muted-2);
+      font-size: 10px;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .tool-card {
+      position: relative;
+      min-height: 170px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      background: var(--panel);
+      padding: 17px;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .tool-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 90% 0%, rgba(118,87,255,.12), transparent 45%);
+      opacity: 0;
+      transition: .25s;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(118,87,255,.3);
+      box-shadow: 0 18px 40px rgba(0,0,0,.25);
+    }
+
+    .tool-card:hover::before {
+      opacity: 1;
+    }
+
+    .tool-card-icon {
+      width: 39px;
+      height: 39px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: rgba(118,87,255,.11);
+      color: #b6a8ff;
+      font-size: 18px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .tool-card h3 {
+      font-size: 12px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    .tool-card p {
+      color: var(--muted);
+      font-size: 9px;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .tool-arrow {
+      position: absolute;
+      left: 15px;
+      bottom: 16px;
+      color: var(--muted-2);
+    }
+
+    /* =========================
+       WORKFLOW
+    ========================= */
+
+    .workflow {
+      margin-top: 55px;
+    }
+
+    .workflow-card {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 19px;
+      padding: 22px;
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 10px;
+    }
+
+    .workflow-step {
+      position: relative;
+      background: rgba(255,255,255,.025);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 15px;
+      min-height: 105px;
+    }
+
+    .workflow-number {
+      font-size: 9px;
+      color: #9f91ff;
+      margin-bottom: 14px;
+    }
+
+    .workflow-step strong {
+      display: block;
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+
+    .workflow-step span {
+      color: var(--muted-2);
+      font-size: 8px;
+      line-height: 1.5;
+    }
+
+    /* =========================
+       ACTIVITY
+    ========================= */
+
+    .activity {
+      margin-top: 55px;
+    }
+
+    .empty-state {
+      min-height: 180px;
+      border: 1px dashed rgba(255,255,255,.12);
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--muted);
+      background: rgba(255,255,255,.012);
+    }
+
+    .empty-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 13px;
+      margin: 0 auto 10px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.045);
+      font-size: 18px;
+    }
+
+    .empty-state strong {
+      display: block;
+      color: #d6d8df;
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+
+    .empty-state p {
+      font-size: 9px;
+      color: var(--muted-2);
+    }
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.72);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.show {
+      display: flex;
+    }
+
+    .modal {
+      width: min(680px,100%);
+      border: 1px solid var(--border-strong);
+      background: #0d0f14;
+      border-radius: 20px;
+      box-shadow: 0 30px 100px rgba(0,0,0,.6);
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-header h3 {
+      font-size: 14px;
+    }
+
+    .close-btn {
+      width: 31px;
+      height: 31px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .upload-zone {
+      border: 1px dashed rgba(118,87,255,.35);
+      background: rgba(118,87,255,.045);
+      border-radius: 16px;
+      min-height: 210px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 30px;
+      transition: .2s;
+    }
+
+    .upload-zone.drag {
+      background: rgba(118,87,255,.12);
+      border-color: #8c76ff;
+    }
+
+    .upload-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: rgba(118,87,255,.12);
+      margin: auto auto 12px;
+      font-size: 21px;
+    }
+
+    .upload-zone strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .upload-zone p {
+      color: var(--muted);
+      font-size: 9px;
+      margin-bottom: 14px;
+    }
+
+    .upload-btn {
+      border: 0;
+      background: #fff;
+      color: #111;
+      border-radius: 9px;
+      padding: 9px 15px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    input[type=file] {
+      display: none;
+    }
+
+    /* =========================
+       TOAST
+    ========================= */
+
+    .toast {
+      position: fixed;
+      left: 25px;
+      bottom: 25px;
+      background: #171a22;
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+      border-radius: 12px;
+      padding: 12px 15px;
+      font-size: 10px;
+      color: #dfe1e8;
+      z-index: 200;
+      transform: translateY(30px);
+      opacity: 0;
+      pointer-events: none;
+      transition: .3s;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width:1050px) {
+      .tools-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .workflow-grid {
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
+
+    @media(max-width:760px) {
+      .sidebar {
+        transform: translateX(100%);
+        transition: .25s;
+        box-shadow: -20px 0 60px rgba(0,0,0,.5);
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .main {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .mobile-menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--border);
+        background: transparent;
+        color: white;
+        border-radius: 9px;
+      }
+
+      .home {
+        padding: 30px 16px 50px;
+      }
+
+      .topbar {
+        padding: 0 15px;
+      }
+
+      .credits {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+
+      .hero p {
+        font-size: 12px;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .workflow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .generator-bottom {
+        align-items: stretch;
+      }
+
+      .generate-btn {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="brand">
+      <div class="brand-mark">V</div>
+      <div class="brand-name">VINOM AI</div>
+      <div class="brand-beta">AI</div>
+    </div>
+
+    <div class="nav-title">Workspace</div>
+
+    <nav class="nav">
+
+      <button class="nav-item active" onclick="selectNav(this,'home')">
+        <span class="nav-icon">⌂</span>
+        <span>الرئيسية</span>
+      </button>
+
+      <button class="nav-item" onclick="selectNav(this,'create')">
+        <span class="nav-icon">✦</span>
+        <span>إنشاء جديد</span>
+        <span class="nav-badge">AI</span>
+      </button>
+
+      <button class="nav-item" onclick="selectNav(this,'projects')">
+        <span class="nav-icon">▣</span>
+        <span>مشاريعي</span>
+      </button>
+
+      <button class="nav-item" onclick="selectNav(this,'history')">
+        <span class="nav-icon">◷</span>
+        <span>السجل</span>
+      </button>
+
+    </nav>
+
+    <div class="nav-title" style="margin-top:24px;">AI Studio</div>
+
+    <nav class="nav">
+
+      <button class="nav-item" onclick="openTool('image')">
+        <span class="nav-icon">▧</span>
+        <span>الصور</span>
+      </button>
+
+      <button class="nav-item" onclick="openTool('video')">
+        <span class="nav-icon">▶</span>
+        <span>الفيديو</span>
+      </button>
+
+      <button class="nav-item" onclick="openTool('audio')">
+        <span class="nav-icon">♫</span>
+        <span>الصوت</span>
+      </button>
+
+      <button class="nav-item" onclick="openTool('enhance')">
+        <span class="nav-icon">✧</span>
+        <span>تحسين الجودة</span>
+      </button>
+
+      <button class="nav-item" onclick="openTool('remove')">
+        <span class="nav-icon">◌</span>
+        <span>إزالة الخلفية</span>
+      </button>
+
+    </nav>
+
+    <div class="sidebar-spacer"></div>
+
+    <div class="pro-card">
+      <strong>استكشف قوة VINOM AI</strong>
+      <p>
+        اجمع أقوى أدوات الذكاء الاصطناعي في مساحة عمل واحدة.
+      </p>
+      <button class="upgrade-btn" onclick="showToast('سيتم تفعيل الخطط قريبًا')">
+        ترقية الخطة
+      </button>
+    </div>
+
+    <div class="user-box">
+      <div class="avatar">V</div>
+      <div class="user-info">
+        <strong>VINOM AI</strong>
+        <span>Free Workspace</span>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="main">
+
+    <header class="topbar">
+
+      <button class="mobile-menu" onclick="toggleSidebar()">☰</button>
+
+      <div class="workspace-name">
+        VINOM AI Studio
+      </div>
+
+      <div class="workspace-status">
+        <span class="status-dot"></span>
+        النظام متصل
+      </div>
+
+      <div class="top-actions">
+
+        <div class="credits">
+          <span class="credit-dot"></span>
+          <span>رصيد تجريبي</span>
+          <strong>100</strong>
+        </div>
+
+        <button class="top-btn" onclick="showToast('الإشعارات ستكون متاحة قريبًا')">
+          ♢
+        </button>
+
+        <button class="top-btn" onclick="showToast('الإعدادات ستكون متاحة قريبًا')">
+          ⚙
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <section class="home">
+
+      <!-- HERO -->
+
+      <div class="hero">
+
+        <div class="hero-label">
+          <span>✦</span>
+          الجيل الجديد من الاستوديو الإبداعي بالذكاء الاصطناعي
+        </div>
+
+        <h1>
+          حوّل <span>أفكارك</span><br />
+          إلى محتوى مذهل
+        </h1>
+
+        <p>
+          منصة VINOM AI تجمع إنشاء الصور والفيديو والصوت والتحسين والتحرير
+          في مساحة إبداعية واحدة مصممة للمحترفين.
+        </p>
+
+      </div>
+
+
+      <!-- GENERATOR -->
+
+      <div class="generator">
+
+        <div class="generator-top">
+
+          <textarea
+            id="prompt"
+            class="prompt-area"
+            placeholder="صف ما تريد إنشاءه بالتفصيل... مثال: سيارة رياضية سوداء في شوارع دبي ليلًا، تصوير سينمائي واقعي، إضاءة نيون..."
+          ></textarea>
+
+        </div>
+
+        <div class="generator-bottom">
+
+          <button
+            class="tool-pill active"
+            id="imageMode"
+            onclick="setMode('image')">
+            🖼 صورة
+          </button>
+
+          <button
+            class="tool-pill"
+            id="videoMode"
+            onclick="setMode('video')">
+            🎬 فيديو
+          </button>
+
+          <button
+            class="tool-pill"
+            id="audioMode"
+            onclick="setMode('audio')">
+            🎧 صوت
+          </button>
+
+          <button
+            class="tool-pill"
+            onclick="openUpload()">
+            ＋ رفع ملف
+          </button>
+
+          <select class="model-select" id="model">
+
+            <option value="auto">
+              Auto — أفضل نموذج
+            </option>
+
+            <option value="image-pro">
+              VINOM Image Pro
+            </option>
+
+            <option value="cinematic">
+              Cinematic Video
+            </option>
+
+            <option value="creative">
+              Creative Studio
+            </option>
+
+          </select>
+
+          <button class="generate-btn" onclick="generate()">
+            ✦ إنشاء الآن
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- QUICK TOOLS -->
+
+      <div class="section-head">
+        <div>
+          <h2>أدوات الذكاء الاصطناعي</h2>
+          <p>كل ما تحتاجه لإنشاء محتوى احترافي</p>
+        </div>
+      </div>
+
+
+      <div class="tools-grid">
+
+        <article class="tool-card" onclick="openTool('image')">
+
+          <div class="tool-card-icon">✦</div>
+
+          <h3>إنشاء الصور</h3>
+
+          <p>
+            أنشئ صورًا واقعية وإبداعية من وصف نصي أو صورة مرجعية.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('video')">
+
+          <div class="tool-card-icon">▶</div>
+
+          <h3>إنشاء الفيديو</h3>
+
+          <p>
+            حوّل النصوص والصور إلى فيديوهات سينمائية عالية الجودة.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('enhance')">
+
+          <div class="tool-card-icon">✧</div>
+
+          <h3>تحسين الصور</h3>
+
+          <p>
+            ارفع الدقة، حسّن التفاصيل والإضاءة والحدة تلقائيًا.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('remove')">
+
+          <div class="tool-card-icon">◌</div>
+
+          <h3>إزالة الخلفية</h3>
+
+          <p>
+            إزالة الخلفيات بدقة مع الحفاظ على تفاصيل العنصر الرئيسي.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('edit')">
+
+          <div class="tool-card-icon">⌘</div>
+
+          <h3>المحرر الذكي</h3>
+
+          <p>
+            عدّل الصور بالأوامر النصية مع التحكم في التفاصيل.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('motion')">
+
+          <div class="tool-card-icon">◈</div>
+
+          <h3>تحريك الصور</h3>
+
+          <p>
+            حوّل الصورة الثابتة إلى مشهد متحرك نابض بالحياة.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('audio')">
+
+          <div class="tool-card-icon">♫</div>
+
+          <h3>استوديو الصوت</h3>
+
+          <p>
+            إنشاء صوت وموسيقى ومؤثرات صوتية بالذكاء الاصطناعي.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+
+        <article class="tool-card" onclick="openTool('upscale')">
+
+          <div class="tool-card-icon">⬈</div>
+
+          <h3>رفع الجودة</h3>
+
+          <p>
+            تحسين الدقة والتفاصيل للصور والفيديوهات بجودة احترافية.
+          </p>
+
+          <span class="tool-arrow">←</span>
+
+        </article>
+
+      </div>
+
+
+      <!-- WORKFLOW -->
+
+      <section class="workflow">
+
+        <div class="section-head">
+          <div>
+            <h2>استوديو إبداعي متكامل</h2>
+            <p>من الفكرة إلى النتيجة النهائية</p>
+          </div>
+        </div>
+
+        <div class="workflow-card">
+
+          <div class="workflow-grid">
+
+            <div class="workflow-step">
+              <div class="workflow-number">01</div>
+              <strong>فكرة</strong>
+              <span>اكتب فكرتك أو ارفع ملفًا.</span>
+            </div>
+
+            <div class="workflow-step">
+              <div class="workflow-number">02</div>
+              <strong>AI Engine</strong>
+              <span>اختيار أفضل نموذج تلقائيًا.</span>
+            </div>
+
+            <div class="workflow-step">
+              <div class="workflow-number">03</div>
+              <strong>إنشاء</strong>
+              <span>توليد المحتوى بالذكاء الاصطناعي.</span>
+            </div>
+
+            <div class="workflow-step">
+              <div class="workflow-number">04</div>
+              <strong>تحرير</strong>
+              <span>تحسين وتعديل النتيجة.</span>
+            </div>
+
+            <div class="workflow-step">
+              <div class="workflow-number">05</div>
+              <strong>تصدير</strong>
+              <span>تحميل ومشاركة العمل النهائي.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ACTIVITY -->
+
+      <section class="activity">
+
+        <div class="section-head">
+          <div>
+            <h2>أعمالك الأخيرة</h2>
+            <p>ستظهر مشاريعك هنا</p>
+          </div>
+        </div>
+
+        <div class="empty-state">
+
+          <div>
+            <div class="empty-icon">✦</div>
+
+            <strong>لم تنشئ أي مشروع بعد</strong>
+
+            <p>
+              ابدأ بكتابة فكرة في صندوق الإنشاء أعلاه.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+</div>
+
+
+<!-- ================= UPLOAD MODAL ================= -->
+
+<div class="modal-overlay" id="uploadModal">
+
+  <div class="modal">
+
+    <div class="modal-header">
+
+      <h3>رفع ملف إلى VINOM AI</h3>
+
+      <button class="close-btn" onclick="closeUpload()">
+        ×
+      </button>
+
+    </div>
+
+    <div class="modal-body">
+
+      <div class="upload-zone" id="uploadZone">
+
+        <div>
+
+          <div class="upload-icon">↑</div>
+
+          <strong>اسحب الملف هنا</strong>
+
+          <p>
+            الصور والفيديوهات والملفات المدعومة
+          </p>
+
+          <label class="upload-btn">
+            اختيار ملف
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*,video/*,audio/*"
+              onchange="handleFile(this.files[0])"
+            />
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast"></div>
+
+
+<script>
+
+  let currentMode = "image";
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("open");
+  }
+
+
+  /* =========================
+     NAV
+  ========================= */
+
+  function selectNav(element, page) {
+
+    document.querySelectorAll(".nav-item")
+      .forEach(item => item.classList.remove("active"));
+
+    element.classList.add("active");
+
+    if (page !== "home") {
+      showToast("قسم " + page + " سيتم تفعيله في المرحلة القادمة");
+    }
+
+    if (window.innerWidth <= 760) {
+      document.getElementById("sidebar").classList.remove("open");
+    }
+  }
+
+
+  /* =========================
+     MODE
+  ========================= */
+
+  function setMode(mode) {
+
+    currentMode = mode;
+
+    document
+      .querySelectorAll(".tool-pill")
+      .forEach(btn => btn.classList.remove("active"));
+
+    if (mode === "image") {
+      document.getElementById("imageMode").classList.add("active");
+    }
+
+    if (mode === "video") {
+      document.getElementById("videoMode").classList.add("active");
+    }
+
+    if (mode === "audio") {
+      document.getElementById("audioMode").classList.add("active");
+    }
+
+    const prompt = document.getElementById("prompt");
+
+    if (mode === "image") {
+      prompt.placeholder =
+        "صف الصورة التي تريد إنشاءها بالتفصيل...";
+    }
+
+    if (mode === "video") {
+      prompt.placeholder =
+        "صف الفيديو والمشهد والحركة والكاميرا والإضاءة...";
+    }
+
+    if (mode === "audio") {
+      prompt.placeholder =
+        "صف الصوت أو الموسيقى التي تريد إنشاءها...";
+    }
+  }
+
+
+  /* =========================
+     GENERATE
+  ========================= */
+
+  function generate() {
+
+    const prompt =
+      document.getElementById("prompt").value.trim();
+
+    if (!prompt) {
+      showToast("اكتب وصفًا أولًا لما تريد إنشاءه");
+      document.getElementById("prompt").focus();
+      return;
+    }
+
+    const model =
+      document.getElementById("model").value;
+
+    const btn =
+      document.querySelector(".generate-btn");
+
+    const oldText = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = "⏳ جاري التحضير...";
+
+    setTimeout(() => {
+
+      btn.disabled = false;
+      btn.innerHTML = oldText;
+
+      showToast(
+        "تم تجهيز الطلب — سنربطه بمحرك AI الحقيقي في الخطوة التالية"
+      );
+
+      console.log({
+        mode: currentMode,
+        model: model,
+        prompt: prompt
+      });
+
+    }, 1200);
+  }
+
+
+  /* =========================
+     TOOLS
+  ========================= */
+
+  function openTool(tool) {
+
+    const names = {
+      image: "إنشاء الصور",
+      video: "إنشاء الفيديو",
+      audio: "استوديو الصوت",
+      enhance: "تحسين الصور",
+      remove: "إزالة الخلفية",
+      edit: "المحرر الذكي",
+      motion: "تحريك الصور",
+      upscale: "رفع الجودة"
+    };
+
+    showToast(
+      names[tool] +
+      " — الواجهة جاهزة، وسيتم ربط محرك AI الحقيقي لاحقًا"
+    );
+
+    if (tool === "image") setMode("image");
+    if (tool === "video") setMode("video");
+    if (tool === "audio") setMode("audio");
+
+    document.getElementById("prompt").focus();
+  }
+
+
+  /* =========================
+     UPLOAD
+  ========================= */
+
+  function openUpload() {
+    document
+      .getElementById("uploadModal")
+      .classList.add("show");
+  }
+
+  function closeUpload() {
+    document
+      .getElementById("uploadModal")
+      .classList.remove("show");
+  }
+
+  function handleFile(file) {
+
+    if (!file) return;
+
+    showToast(
+      "تم اختيار: " + file.name
+    );
+
+    closeUpload();
+  }
+
+
+  /* =========================
+     DRAG & DROP
+  ========================= */
+
+  const uploadZone =
+    document.getElementById("uploadZone");
+
+  uploadZone.addEventListener(
+    "dragover",
+    e => {
+      e.preventDefault();
+      uploadZone.classList.add("drag");
+    }
+  );
+
+  uploadZone.addEventListener(
+    "dragleave",
+    () => {
+      uploadZone.classList.remove("drag");
+    }
+  );
+
+  uploadZone.addEventListener(
+    "drop",
+    e => {
+
+      e.preventDefault();
+
+      uploadZone.classList.remove("drag");
+
+      const file = e.dataTransfer.files[0];
+
+      handleFile(file);
+    }
+  );
+
+
+  /* =========================
+     TOAST
+  ========================= */
+
+  let toastTimer;
+
+  function showToast(message) {
+
+    const toast =
+      document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    clearTimeout(toastTimer);
+
+    toastTimer = setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3200);
+  }
+
+
+  /* =========================
+     ESCAPE
+  ========================= */
+
+  document.addEventListener(
+    "keydown",
+    e => {
+
+      if (e.key === "Escape") {
+        closeUpload();
+      }
+
+      if (
+        (e.ctrlKey || e.metaKey) &&
+        e.key === "Enter"
+      ) {
+        generate();
+      }
+    }
+  );
+
+</script>
+
+</body>
+</html>
