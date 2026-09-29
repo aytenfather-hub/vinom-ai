@@ -1,0 +1,19 @@
+name: fb_core
+description: Fruit Box shared data models, pricing, repositories and configuration.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+environment:
+  sdk: ^3.13.0
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.5
+  supabase: ^2.16.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  assets:
+    - assets/seed/

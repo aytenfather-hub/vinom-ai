@@ -1,0 +1,12 @@
+name: fruitbox_workspace
+description: Fruit Box — customer app, website, admin, in-store screens (Flutter workspace)
+publish_to: none
+environment:
+  sdk: ^3.13.0
+workspace:
+  - packages/fb_core
+  - packages/fb_ui
+  - apps/customer
+  - apps/website
+  - apps/admin
+  - apps/signage

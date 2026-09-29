@@ -1,0 +1,22 @@
+name: fruitbox_customer
+description: Fruit Box — customer
+publish_to: none
+version: 0.1.0+1
+resolution: workspace
+environment:
+  sdk: ^3.13.0
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  fb_core:
+  fb_ui:
+  go_router: ^18.0.2
+dev_dependencies:
+  shared_preferences: ^2.5.5
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
