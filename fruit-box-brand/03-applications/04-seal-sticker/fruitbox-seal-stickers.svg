@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1300" viewBox="0 0 1800 1300">
+<title>Fruit Box seal stickers</title>
+<!-- Editable layout: vectors + live text (fonts: Cairo, Poppins in /fonts). The Fruit Box logo is the original raster artwork linked as PNG. -->
+<defs>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="shadowS" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="blur40"><feGaussianBlur stdDeviation="40"/></filter>
+<filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3B1A0C" stop-opacity=".35"/><stop offset="1" stop-color="#3B1A0C" stop-opacity="0"/></radialGradient>
+<linearGradient id="smoothie" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset=".55" stop-color="#F08C8C"/><stop offset="1" stop-color="#D9606A"/></linearGradient>
+<linearGradient id="clear" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".12"/><stop offset=".8" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#ffffff" stop-opacity=".4"/></linearGradient>
+<linearGradient id="paper" x1="0" x2="1"><stop offset="0" stop-color="#E9DDCD"/><stop offset=".25" stop-color="#FDF8F3"/><stop offset=".7" stop-color="#F6EEE3"/><stop offset="1" stop-color="#DCCBB6"/></linearGradient>
+<linearGradient id="kraft" x1="0" x2="1"><stop offset="0" stop-color="#E6D6C1"/><stop offset=".5" stop-color="#F4EADF"/><stop offset="1" stop-color="#E0CDB5"/></linearGradient>
+<linearGradient id="cocoaG" x1="0" x2="1"><stop offset="0" stop-color="#4E1F0F"/><stop offset=".45" stop-color="#6E2E17"/><stop offset="1" stop-color="#4A1D0E"/></linearGradient>
+<linearGradient id="tealG" x1="0" x2="1"><stop offset="0" stop-color="#5EAE99"/><stop offset=".5" stop-color="#7CC6B2"/><stop offset="1" stop-color="#5AA792"/></linearGradient>
+<linearGradient id="glassWin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFE9E2"/><stop offset=".5" stop-color="#A9D6CA"/><stop offset="1" stop-color="#8CC3B5"/></linearGradient>
+<linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+<pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="3" fill="#71BCA8" opacity=".35"/><circle cx="28" cy="28" r="3" fill="#F39A99" opacity=".45"/></pattern>
+<pattern id="stripes" width="120" height="10" patternUnits="userSpaceOnUse"><rect width="60" height="10" fill="#71BCA8"/><rect x="60" width="60" height="10" fill="#FDF8F3"/></pattern>
+</defs>
+<rect id="background" width="1800" height="1300" fill="#F4EADF"/>
+<rect x="0" y="0" width="1800" height="1300" fill="url(#dots)" opacity=".5"/>
+<g filter="url(#shadow)"><circle cx="560" cy="620" r="380" fill="#71BCA8"/></g>
+<circle cx="560" cy="620" r="300" fill="#FDF8F3"/><circle cx="560" cy="620" r="362" fill="none" stroke="#FDF8F3" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+<path id="ring" d="M222 620 A338 338 0 1 1 898 620 A338 338 0 1 1 222 620" fill="none"/>
+<text font-family="Poppins" font-weight="700" font-size="36" letter-spacing="6" fill="#FDF8F3"><textPath href="#ring" startOffset="0">FRESH • SEALED WITH CARE • FRUIT BOX • FRESH • SEALED WITH CARE • FRUIT BOX •</textPath></text>
+<image id="logo" href="../../01-logo/fruitbox-logo-original-transparent.png" x="320.0" y="416.7" width="480.0" height="386.7" preserveAspectRatio="xMidYMid meet"/>
+<text x="560" y="830" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="40" font-weight="900" fill="#602713" text-anchor="middle" direction="rtl" >مختوم بعناية</text>
+<g filter="url(#shadowS)" transform="rotate(-6 1380 450)"><rect x="1080" y="360" width="600" height="180" rx="16" fill="#602713"/><rect x="1090" y="370" width="580" height="160" rx="10" fill="none" stroke="#FDF8F3" stroke-width="2" stroke-dasharray="8 8" opacity=".6"/><image href="../../01-logo/fruitbox-logo-dark-bg-version-transparent.png" x="1480" y="374" width="186" height="151"/><text x="1460" y="446" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="44" font-weight="900" fill="#FDF8F3" text-anchor="start" direction="rtl" >طازج ومختوم لأجلك</text><text x="1460" y="496" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="26" font-weight="600" fill="#F39A99" text-anchor="start" direction="rtl" >لا تستخدمه إذا كان الختم مفتوحاً</text></g>
+<g filter="url(#shadowS)"><circle cx="1180" cy="860" r="150" fill="#C1232C"/></g><circle cx="1180" cy="860" r="132" fill="none" stroke="#FDF8F3" stroke-width="3" opacity=".6"/>
+<text x="1180" y="854" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="54" font-weight="900" fill="#FDF8F3" text-anchor="middle" direction="rtl" >طازج</text><text x="1180" y="916" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="40" font-weight="800" fill="#FDF8F3" text-anchor="middle" direction="rtl" >١٠٠٪</text>
+<g filter="url(#shadowS)"><circle cx="1530" cy="900" r="150" fill="#FCD82F"/></g><circle cx="1530" cy="900" r="132" fill="none" stroke="#602713" stroke-width="3" opacity=".6"/>
+<text x="1530" y="894" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="54" font-weight="900" fill="#602713" text-anchor="middle" direction="rtl" >بدون</text><text x="1530" y="956" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="40" font-weight="800" fill="#602713" text-anchor="middle" direction="rtl" >سكر مضاف</text>
+</svg>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fruit Box — تطبيق الجوال</title>
+<link rel="stylesheet" href="fruitbox-ui.css">
+<style>
+  body{width:2430px;height:1040px;padding:110px 60px 0;background:linear-gradient(180deg,#E3F2EE,#F4EADF)}
+  .board{display:flex;gap:60px}
+  .label{position:absolute;top:36px;right:60px;font-size:30px;font-weight:900;color:var(--cocoa)}
+  .label span{font-size:18px;color:var(--brown);font-weight:600;margin-inline-start:14px}
+</style>
+</head>
+<body>
+<div class="label">Fruit Box — واجهات تطبيق الجوال <span>الرئيسية • المنتجات • تفاصيل المنتج وزر الطلب • العروض • تتبّع الطلب</span></div>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21h4"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+</svg>
+
+<div class="board">
+
+<!-- 1 HOME -->
+<div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="scr">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="../01-logo/fruitbox-logo-original-transparent.png" style="height:52px" alt="Fruit Box">
+        <div><div class="muted">صباح الخير، سارة</div><div class="h1" style="font-size:20px">وش مزاجك اليوم؟</div></div>
+      </div>
+      <div class="card" style="width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:var(--cocoa)"><svg class="ico"><use href="#i-bell"/></svg></div>
+    </div>
+    <div class="search"><svg class="ico"><use href="#i-search"/></svg>ابحث عن عصير، سموذي أو بوكس…</div>
+    <div class="promo">
+      <span class="tag">عرض محدود</span>
+      <b style="margin-top:8px">خصم ٢٠٪<br>على طلبك الأول</b>
+      <div style="font-size:13px;font-weight:700;margin-top:4px">استخدم الكود <span class="en">FRESH20</span></div>
+      <img src="assets/drink-strawberry.svg" alt="">
+    </div>
+    <div class="row"><span class="chip on">الكل</span><span class="chip">عصائر</span><span class="chip">سموذي</span><span class="chip">بوكسات</span><span class="chip">سلطات</span></div>
+    <div class="sec"><h3>الأكثر طلباً</h3><a>عرض الكل</a></div>
+    <div class="pgrid">
+      <div class="card pc"><div class="img" style="background:var(--blush)"><img src="assets/drink-strawberry.svg"></div><h4>سموذي فراولة وموز</h4><div class="ft"><span class="price">١٨ <small>ر.س</small></span><span class="add">+</span></div></div>
+      <div class="card pc"><div class="img" style="background:#FFF4D6"><img src="assets/drink-orange.svg"></div><h4>برتقال طازج</h4><div class="ft"><span class="price">١٢ <small>ر.س</small></span><span class="add">+</span></div></div>
+    </div>
+  </div>
+  <nav class="tabbar"><a class="on"><svg class="ico"><use href="#i-home"/></svg>الرئيسية</a><a><svg class="ico"><use href="#i-menu"/></svg>القائمة</a><a><svg class="ico"><use href="#i-tag"/></svg>العروض</a><a><svg class="ico"><use href="#i-bag"/></svg>طلباتي</a><a><svg class="ico"><use href="#i-user"/></svg>حسابي</a></nav>
+</div>
+
+<!-- 2 PRODUCTS -->
+<div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="scr">
+    <div class="topbar"><div class="h1">القائمة</div><div class="muted">٢٤ منتجاً</div></div>
+    <div class="search"><svg class="ico"><use href="#i-search"/></svg>ابحث في القائمة…</div>
+    <div class="row"><span class="chip">الكل</span><span class="chip on">سموذي</span><span class="chip">عصائر</span><span class="chip">بوكسات</span><span class="chip">إضافات</span></div>
+    <div class="pgrid">
+      <div class="card pc"><div class="img" style="background:var(--blush)"><img src="assets/drink-strawberry.svg"></div><h4>فراولة وموز</h4><div class="muted">فراولة، موز، زبادي</div><div class="ft"><span class="price">١٨ <small>ر.س</small></span><span class="add">+</span></div></div>
+      <div class="card pc"><div class="img" style="background:#F1E7F6"><img src="assets/drink-berry.svg"></div><h4>توت مشكّل</h4><div class="muted">توت أزرق وأحمر، عسل</div><div class="ft"><span class="price">٢٠ <small>ر.س</small></span><span class="add">+</span></div></div>
+      <div class="card pc"><div class="img" style="background:#FFEBD2"><img src="assets/drink-mango.svg"></div><h4>مانجو وأناناس</h4><div class="muted">استوائي ومنعش</div><div class="ft"><span class="price">١٩ <small>ر.س</small></span><span class="add">+</span></div></div>
+      <div class="card pc"><div class="img" style="background:#ECF6DC"><img src="assets/drink-green.svg"></div><h4>سموذي أخضر</h4><div class="muted">سبانخ، تفاح، كيوي</div><div class="ft"><span class="price">١٩ <small>ر.س</small></span><span class="add">+</span></div></div>
+    </div>
+  </div>
+  <nav class="tabbar"><a><svg class="ico"><use href="#i-home"/></svg>الرئيسية</a><a class="on"><svg class="ico"><use href="#i-menu"/></svg>القائمة</a><a><svg class="ico"><use href="#i-tag"/></svg>العروض</a><a><svg class="ico"><use href="#i-bag"/></svg>طلباتي</a><a><svg class="ico"><use href="#i-user"/></svg>حسابي</a></nav>
+</div>
+
+<!-- 3 PRODUCT DETAIL + ORDER BUTTON -->
+<div class="phone" style="background:var(--blush)">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="scr" style="padding:0">
+    <div class="topbar" style="padding:0 20px"><span class="card" style="width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:var(--cocoa)"><svg class="ico"><use href="#i-back"/></svg></span><span class="card" style="width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:var(--red)"><svg class="ico"><use href="#i-heart"/></svg></span></div>
+    <div style="height:280px;display:grid;place-items:center"><img src="assets/drink-strawberry.svg" style="height:270px"></div>
+    <div style="background:var(--cream);border-radius:32px 32px 0 0;padding:22px 20px;height:500px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><div class="h1">سموذي فراولة وموز</div><span class="price" style="font-size:24px">١٨ <small>ر.س</small></span></div>
+      <p class="muted" style="margin:6px 0 14px;font-size:14px;line-height:1.7">فراولة طازجة وموز ناضج مع زبادي طبيعي، يُحضّر عند الطلب بدون سكر مضاف.</p>
+      <div class="sec"><h3 style="font-size:16px">الحجم</h3></div>
+      <div style="display:flex;gap:8px"><span class="chip">صغير</span><span class="chip on">وسط</span><span class="chip">كبير +٤</span></div>
+      <div class="sec" style="margin-top:14px"><h3 style="font-size:16px">إضافات</h3></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip on">عسل +٣</span><span class="chip">شوفان +٣</span><span class="chip">مكسرات +٤</span></div>
+      <div style="display:flex;align-items:center;gap:14px;margin-top:22px">
+        <div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:8px 10px;font-weight:900;color:var(--cocoa)"><span class="add" style="width:30px;height:30px">+</span>١<span class="add" style="width:30px;height:30px;background:#EADCCB;color:var(--cocoa)">−</span></div>
+        <button class="btn btn-primary" style="flex:1;justify-content:space-between;white-space:nowrap;padding:14px 18px"><span>أضف واطلب الآن</span><span>٢١ ر.س</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 OFFERS -->
+<div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="scr">
+    <div class="topbar"><div class="h1">العروض</div><div class="muted">محدّثة اليوم</div></div>
+    <div class="card" style="background:var(--cocoa);color:var(--cream);padding:18px;position:relative;overflow:hidden;height:176px">
+      <span class="tag">طلبك الأول</span><div style="font-size:26px;font-weight:900;margin-top:6px">خصم ٢٠٪</div>
+      <div style="font-size:13px;opacity:.85">على أي طلب من التطبيق</div>
+      <div style="margin-top:10px;display:inline-block;border:2px dashed var(--pink);border-radius:10px;padding:2px 12px;font:700 15px Poppins;color:var(--pink)">FRESH20</div>
+      <img src="assets/drink-strawberry.svg" style="position:absolute;left:10px;bottom:-6px;height:150px">
+    </div>
+    <div class="card" style="background:var(--teal);padding:18px;margin-top:14px;position:relative;overflow:hidden;height:176px;color:var(--cocoa)">
+      <span class="tag" style="background:var(--cream)">حتى الخميس</span><div style="font-size:24px;font-weight:900;margin-top:6px">الحبة الثانية<br>بنصف السعر</div>
+      <div style="font-size:13px;font-weight:700">على جميع أنواع السموذي</div>
+      <img src="assets/drink-green.svg" style="position:absolute;left:10px;bottom:-6px;height:150px">
+    </div>
+    <div class="card" style="padding:16px;margin-top:14px;display:flex;gap:14px;align-items:center">
+      <div style="width:84px;height:84px;border-radius:18px;background:#FFF4D6;display:grid;place-items:center"><img src="assets/drink-mango.svg" style="height:78px"></div>
+      <div style="flex:1"><b style="color:var(--cocoa);font-size:16px">بوكس العائلة</b><div class="muted">يكفي ٤–٥ أشخاص • توصيل مجاني</div><div class="price" style="margin-top:4px">٥٩ <small>ر.س</small> <s style="color:#B7A194;font-size:13px;font-weight:600">٦٩</s></div></div>
+      <button class="btn btn-primary" style="padding:10px 16px;font-size:14px">اطلب</button>
+    </div>
+  </div>
+  <nav class="tabbar"><a><svg class="ico"><use href="#i-home"/></svg>الرئيسية</a><a><svg class="ico"><use href="#i-menu"/></svg>القائمة</a><a class="on"><svg class="ico"><use href="#i-tag"/></svg>العروض</a><a><svg class="ico"><use href="#i-bag"/></svg>طلباتي</a><a><svg class="ico"><use href="#i-user"/></svg>حسابي</a></nav>
+</div>
+
+<!-- 5 ORDER TRACKING -->
+<div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="scr" style="padding:0">
+    <div style="height:300px;background:#E6EFE9;position:relative;overflow:hidden">
+      <svg viewBox="0 0 390 300" width="390" height="300" style="position:absolute;inset:0">
+        <g stroke="#fff" stroke-width="14" fill="none"><path d="M-10 80 H400"/><path d="M-10 210 H400"/><path d="M90 -10 V310"/><path d="M270 -10 V310"/></g>
+        <g fill="#D5E6DC"><rect x="110" y="100" width="140" height="90" rx="10"/><rect x="0" y="100" width="70" height="90" rx="10"/><rect x="290" y="0" width="100" height="60" rx="10"/><rect x="290" y="230" width="100" height="70" rx="10"/></g>
+        <path d="M60 250 V210 H270 V80 H340" stroke="#C1232C" stroke-width="5" fill="none" stroke-dasharray="10 8" stroke-linecap="round"/>
+        <circle cx="60" cy="252" r="12" fill="#602713"/><circle cx="60" cy="252" r="5" fill="#fff"/>
+        <circle cx="270" cy="150" r="20" fill="#71BCA8"/><path d="M262 150 h16 M270 142 v16" stroke="#fff" stroke-width="3"/>
+        <circle cx="340" cy="80" r="14" fill="#C1232C"/><circle cx="340" cy="80" r="26" fill="#C1232C" opacity=".18"/>
+      </svg>
+      <div class="topbar" style="position:absolute;top:4px;inset-inline:20px"><span class="card" style="width:44px;height:44px;display:grid;place-items:center;border-radius:14px;color:var(--cocoa)"><svg class="ico"><use href="#i-back"/></svg></span></div>
+    </div>
+    <div style="background:var(--cream);border-radius:32px 32px 0 0;margin-top:-30px;position:relative;padding:22px 20px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><div><div class="muted">طلب رقم <span class="en">#FB-2048</span></div><div class="h1">طلبك في الطريق</div></div>
+        <div style="text-align:center;background:var(--mint);border-radius:16px;padding:6px 14px"><div style="font-size:24px;font-weight:900;color:var(--teal-d)">١٢</div><div class="muted" style="font-size:11px">دقيقة</div></div></div>
+      <div style="height:8px;border-radius:8px;background:#EADCCB;margin:14px 0 18px;overflow:hidden"><div style="width:72%;height:100%;background:linear-gradient(90deg,var(--red),var(--teal))"></div></div>
+      <div class="step ok"><div class="dot"><svg class="ico" style="width:16px"><use href="#i-check"/></svg></div><div><b>تم استلام الطلب</b><span>٩:١٢ ص</span></div></div>
+      <div class="step ok"><div class="dot"><svg class="ico" style="width:16px"><use href="#i-check"/></svg></div><div><b>جارٍ التحضير بعناية</b><span>٩:١٥ ص • فواكه طازجة تُقطّع الآن</span></div></div>
+      <div class="step now"><div class="dot"></div><div><b>في الطريق إليك</b><span>المندوب على بُعد ٢٫٤ كم</span></div></div>
+      <div class="step"><div class="dot"></div><div><b>تم التوصيل</b><span>الوقت المتوقع ٩:٥٣ ص</span></div></div>
+      <div class="card" style="display:flex;align-items:center;gap:12px;padding:12px 14px">
+        <div style="width:44px;height:44px;border-radius:50%;background:var(--oat);display:grid;place-items:center;color:var(--brown)"><svg class="ico"><use href="#i-user"/></svg></div>
+        <div style="flex:1"><b style="color:var(--cocoa)">مندوب التوصيل</b><div class="muted">دراجة • ٤٫٩ ★</div></div>
+        <span class="add" style="background:var(--teal)"><svg class="ico" style="width:18px"><use href="#i-phone"/></svg></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

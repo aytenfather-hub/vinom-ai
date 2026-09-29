@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1240" height="1754" viewBox="0 0 1240 1754">
+<title>Fruit Box menu</title>
+<!-- Editable layout: vectors + live text (fonts: Cairo, Poppins in /fonts). The Fruit Box logo is the original raster artwork linked as PNG. -->
+<defs>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="shadowS" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="blur40"><feGaussianBlur stdDeviation="40"/></filter>
+<filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3B1A0C" stop-opacity=".35"/><stop offset="1" stop-color="#3B1A0C" stop-opacity="0"/></radialGradient>
+<linearGradient id="smoothie" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset=".55" stop-color="#F08C8C"/><stop offset="1" stop-color="#D9606A"/></linearGradient>
+<linearGradient id="clear" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".12"/><stop offset=".8" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#ffffff" stop-opacity=".4"/></linearGradient>
+<linearGradient id="paper" x1="0" x2="1"><stop offset="0" stop-color="#E9DDCD"/><stop offset=".25" stop-color="#FDF8F3"/><stop offset=".7" stop-color="#F6EEE3"/><stop offset="1" stop-color="#DCCBB6"/></linearGradient>
+<linearGradient id="kraft" x1="0" x2="1"><stop offset="0" stop-color="#E6D6C1"/><stop offset=".5" stop-color="#F4EADF"/><stop offset="1" stop-color="#E0CDB5"/></linearGradient>
+<linearGradient id="cocoaG" x1="0" x2="1"><stop offset="0" stop-color="#4E1F0F"/><stop offset=".45" stop-color="#6E2E17"/><stop offset="1" stop-color="#4A1D0E"/></linearGradient>
+<linearGradient id="tealG" x1="0" x2="1"><stop offset="0" stop-color="#5EAE99"/><stop offset=".5" stop-color="#7CC6B2"/><stop offset="1" stop-color="#5AA792"/></linearGradient>
+<linearGradient id="glassWin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFE9E2"/><stop offset=".5" stop-color="#A9D6CA"/><stop offset="1" stop-color="#8CC3B5"/></linearGradient>
+<linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+<pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="3" fill="#71BCA8" opacity=".35"/><circle cx="28" cy="28" r="3" fill="#F39A99" opacity=".45"/></pattern>
+<pattern id="stripes" width="120" height="10" patternUnits="userSpaceOnUse"><rect width="60" height="10" fill="#71BCA8"/><rect x="60" width="60" height="10" fill="#FDF8F3"/></pattern>
+</defs>
+<rect id="background" width="1240" height="1754" fill="#FDF8F3"/>
+<rect width="1240" height="430" fill="#E3F2EE"/><path d="M0 430 Q620 500 1240 430 V0 H0 Z" fill="#E3F2EE"/>
+<image id="logo" href="../../01-logo/fruitbox-logo-original-transparent.png" x="420.0" y="58.9" width="400.0" height="322.2" preserveAspectRatio="xMidYMid meet"/>
+<text x="620" y="470" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="64" font-weight="900" fill="#602713" text-anchor="middle" direction="rtl" >قائمة المنتجات</text><text x="620" y="520" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="700" fill="#C1232C" text-anchor="middle" direction="rtl" >فاكهتك على مزاجك</text>
+<rect x="640" y="556" width="520" height="62" rx="31" fill="#F08A24"/>
+<text x="1130" y="600" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="900" fill="#FDF8F3" text-anchor="start" direction="rtl" >عصائر طازجة</text>
+<text x="1140" y="676" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >برتقال طازج</text>
+<text x="1140" y="712" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">معصور عند الطلب</text>
+<line x1="730" y1="666" x2="890" y2="666" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="664" r="32" fill="#FDE9E6"/><text x="684" y="676" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٢</text>
+<text x="1140" y="760" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >فراولة</text>
+<text x="1140" y="796" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">فراولة طازجة وحليب</text>
+<line x1="730" y1="750" x2="890" y2="750" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="748" r="32" fill="#FDE9E6"/><text x="684" y="760" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٤</text>
+<text x="1140" y="844" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >مانجو</text>
+<text x="1140" y="880" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">مانجو ناضجة ١٠٠٪</text>
+<line x1="730" y1="834" x2="890" y2="834" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="832" r="32" fill="#FDE9E6"/><text x="684" y="844" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٥</text>
+<text x="1140" y="928" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >ليمون بالنعناع</text>
+<text x="1140" y="964" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">منعش ومبرّد</text>
+<line x1="730" y1="918" x2="890" y2="918" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="916" r="32" fill="#FDE9E6"/><text x="684" y="928" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٢</text>
+<text x="1140" y="1012" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >رمّان</text>
+<text x="1140" y="1048" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">حبات رمان طازجة</text>
+<line x1="730" y1="1002" x2="890" y2="1002" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="1000" r="32" fill="#FDE9E6"/><text x="684" y="1012" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٦</text>
+<rect x="640" y="1066" width="520" height="62" rx="31" fill="#F39A99"/>
+<text x="1130" y="1110" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="900" fill="#602713" text-anchor="start" direction="rtl" >سموذي</text>
+<text x="1140" y="1186" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >فراولة وموز</text>
+<text x="1140" y="1222" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">فراولة، موز، زبادي</text>
+<line x1="730" y1="1176" x2="890" y2="1176" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="1174" r="32" fill="#FDE9E6"/><text x="684" y="1186" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٨</text>
+<text x="1140" y="1270" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >توت مشكّل</text>
+<text x="1140" y="1306" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">توت أزرق، توت أحمر، عسل</text>
+<line x1="730" y1="1260" x2="890" y2="1260" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="1258" r="32" fill="#FDE9E6"/><text x="684" y="1270" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٢٠</text>
+<text x="1140" y="1354" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >مانجو وأناناس</text>
+<text x="1140" y="1390" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">استوائي ومنعش</text>
+<line x1="730" y1="1344" x2="890" y2="1344" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="1342" r="32" fill="#FDE9E6"/><text x="684" y="1354" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٩</text>
+<text x="1140" y="1438" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >أخضر</text>
+<text x="1140" y="1474" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">سبانخ، تفاح، كيوي</text>
+<line x1="730" y1="1428" x2="890" y2="1428" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="684" cy="1426" r="32" fill="#FDE9E6"/><text x="684" y="1438" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٩</text>
+<rect x="40" y="556" width="520" height="62" rx="31" fill="#71BCA8"/>
+<text x="530" y="600" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="900" fill="#602713" text-anchor="start" direction="rtl" >كاسات وبوكسات الفواكه</text>
+<text x="540" y="676" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >كاسة فواكه</text>
+<text x="540" y="712" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">تشكيلة موسمية</text>
+<line x1="130" y1="666" x2="290" y2="666" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="664" r="32" fill="#FDE9E6"/><text x="84" y="676" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >١٥</text>
+<text x="540" y="760" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >بوكس فواكه مشكّل</text>
+<text x="540" y="796" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">يكفي شخصين</text>
+<line x1="130" y1="750" x2="290" y2="750" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="748" r="32" fill="#FDE9E6"/><text x="84" y="760" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٢٩</text>
+<text x="540" y="844" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >بوكس العائلة</text>
+<text x="540" y="880" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">يكفي ٤–٥ أشخاص</text>
+<line x1="130" y1="834" x2="290" y2="834" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="832" r="32" fill="#FDE9E6"/><text x="84" y="844" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٥٩</text>
+<text x="540" y="928" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >سلطة فواكه بالقشطة</text>
+<text x="540" y="964" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="22" font-weight="500" fill="#8A3D1F" text-anchor="start" direction="rtl" opacity=".75">مع عسل ومكسرات</text>
+<line x1="130" y1="918" x2="290" y2="918" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="916" r="32" fill="#FDE9E6"/><text x="84" y="928" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٢٢</text>
+<rect x="40" y="1066" width="520" height="62" rx="31" fill="#FCD82F"/>
+<text x="530" y="1110" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="900" fill="#602713" text-anchor="start" direction="rtl" >إضافات</text>
+<text x="540" y="1186" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >عسل طبيعي</text>
+<line x1="130" y1="1176" x2="290" y2="1176" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="1174" r="32" fill="#FDE9E6"/><text x="84" y="1186" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٣</text>
+<text x="540" y="1248" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >مكسرات</text>
+<line x1="130" y1="1238" x2="290" y2="1238" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="1236" r="32" fill="#FDE9E6"/><text x="84" y="1248" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٤</text>
+<text x="540" y="1310" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >شوفان</text>
+<line x1="130" y1="1300" x2="290" y2="1300" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="1298" r="32" fill="#FDE9E6"/><text x="84" y="1310" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٣</text>
+<text x="540" y="1372" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="32" font-weight="800" fill="#602713" text-anchor="start" direction="rtl" >آيس كريم فانيلا</text>
+<line x1="130" y1="1362" x2="290" y2="1362" stroke="#8A3D1F" stroke-width="2" stroke-dasharray="2 8" opacity=".5"/>
+<circle cx="84" cy="1360" r="32" fill="#FDE9E6"/><text x="84" y="1372" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="900" fill="#C1232C" text-anchor="middle" direction="rtl" >٥</text>
+<g transform="translate(1060 1695) scale(0.19)">
+<defs><linearGradient id="g29333115" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset="1" stop-color="#D9606A"/></linearGradient></defs>
+<ellipse cx="0" cy="6" rx="240" ry="26" fill="url(#floor)"/>
+<g transform="rotate(28 128 -486)"><rect x="108" y="-750" width="44" height="420" rx="22" fill="#C1232C"/><rect x="118" y="-734" width="10" height="380" rx="5" fill="#fff" opacity=".45"/></g>
+<path d="M-232 -456 H232 L190 -46 Q186 0 140 0 H-140 Q-186 0 -190 -46 Z" fill="url(#g29333115)"/>
+<path d="M-190 -426 L-160 -56" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".5"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564 C18 -610 106 -600 124 -542 C178 -560 258 -528 248 -444 Q248 -422 226 -422 H-226 Q-250 -422 -250 -444 Z" fill="#F7B3AE"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(-42 -610) rotate(0) scale(0.8)">
+<path d="M0 -78 C70 -86 118 -52 112 6 C106 70 46 118 0 132 C-46 118 -106 70 -112 6 C-118 -52 -70 -86 0 -78 Z" fill="#C1232C"/>
+<path d="M-70 -40 C-60 -70 -20 -76 10 -72 C-30 -60 -56 -30 -64 10 Z" fill="#fff" opacity=".22"/>
+<g fill="#FFE9A8"><ellipse cx="-50" cy="-10" rx="6" ry="9"/><ellipse cx="-12" cy="-22" rx="6" ry="9"/><ellipse cx="30" cy="-12" rx="6" ry="9"/><ellipse cx="66" cy="-4" rx="6" ry="9"/><ellipse cx="-66" cy="30" rx="6" ry="9"/><ellipse cx="-28" cy="22" rx="6" ry="9"/><ellipse cx="12" cy="26" rx="6" ry="9"/><ellipse cx="52" cy="32" rx="6" ry="9"/><ellipse cx="-36" cy="66" rx="6" ry="9"/><ellipse cx="4" cy="70" rx="6" ry="9"/><ellipse cx="36" cy="72" rx="6" ry="9"/></g>
+<path d="M0 -70 L-70 -104 L-34 -64 L-96 -52 L-24 -48 Z M0 -70 L70 -104 L34 -64 L96 -52 L24 -48 Z M-10 -60 L0 -124 L10 -60 Z" fill="#5F973E"/></g></g><g transform="translate(950 1695) scale(0.19)">
+<defs><linearGradient id="g10666433" x1="0" x2="1"><stop offset="0" stop-color="#FFE680"/><stop offset="1" stop-color="#F4A340"/></linearGradient></defs>
+<ellipse cx="0" cy="6" rx="240" ry="26" fill="url(#floor)"/>
+<g transform="rotate(28 128 -486)"><rect x="108" y="-750" width="44" height="420" rx="22" fill="#C1232C"/><rect x="118" y="-734" width="10" height="380" rx="5" fill="#fff" opacity=".45"/></g>
+<path d="M-232 -456 H232 L190 -46 Q186 0 140 0 H-140 Q-186 0 -190 -46 Z" fill="url(#g10666433)"/>
+<path d="M-190 -426 L-160 -56" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".5"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564 C18 -610 106 -600 124 -542 C178 -560 258 -528 248 -444 Q248 -422 226 -422 H-226 Q-250 -422 -250 -444 Z" fill="#FFE680"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(-50 -560)"><circle r="80" fill="#F08A24"/><circle r="68.8" fill="#FFF4DA"/><circle r="64.0" fill="#FFB44D"/><path d="M0 0 L64.0 0.0" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L45.3 45.3" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L0.0 64.0" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L-45.3 45.3" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L-64.0 0.0" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L-45.3 -45.3" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L-0.0 -64.0" stroke="#FFF4DA" stroke-width="4.0"/><path d="M0 0 L45.3 -45.3" stroke="#FFF4DA" stroke-width="4.0"/><circle r="6.4" fill="#FFF4DA"/></g></g><g transform="translate(840 1695) scale(0.19)">
+<defs><linearGradient id="g48684795" x1="0" x2="1"><stop offset="0" stop-color="#C9E68A"/><stop offset="1" stop-color="#7DB547"/></linearGradient></defs>
+<ellipse cx="0" cy="6" rx="240" ry="26" fill="url(#floor)"/>
+<g transform="rotate(28 128 -486)"><rect x="108" y="-750" width="44" height="420" rx="22" fill="#C1232C"/><rect x="118" y="-734" width="10" height="380" rx="5" fill="#fff" opacity=".45"/></g>
+<path d="M-232 -456 H232 L190 -46 Q186 0 140 0 H-140 Q-186 0 -190 -46 Z" fill="url(#g48684795)"/>
+<path d="M-190 -426 L-160 -56" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".5"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564 C18 -610 106 -600 124 -542 C178 -560 258 -528 248 -444 Q248 -422 226 -422 H-226 Q-250 -422 -250 -444 Z" fill="#C9E68A"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(-50 -560)"><circle r="78" fill="#7A5A2E"/><circle r="70.2" fill="#8CC63F"/><circle r="23.4" fill="#E8F5C8"/><ellipse cx="32.8" cy="0.0" rx="3.1" ry="6.2" transform="rotate(90 32.8 0.0)" fill="#2B1A12"/><ellipse cx="29.5" cy="14.2" rx="3.1" ry="6.2" transform="rotate(116 29.5 14.2)" fill="#2B1A12"/><ellipse cx="20.4" cy="25.6" rx="3.1" ry="6.2" transform="rotate(141 20.4 25.6)" fill="#2B1A12"/><ellipse cx="7.3" cy="31.9" rx="3.1" ry="6.2" transform="rotate(167 7.3 31.9)" fill="#2B1A12"/><ellipse cx="-7.3" cy="31.9" rx="3.1" ry="6.2" transform="rotate(193 -7.3 31.9)" fill="#2B1A12"/><ellipse cx="-20.4" cy="25.6" rx="3.1" ry="6.2" transform="rotate(219 -20.4 25.6)" fill="#2B1A12"/><ellipse cx="-29.5" cy="14.2" rx="3.1" ry="6.2" transform="rotate(244 -29.5 14.2)" fill="#2B1A12"/><ellipse cx="-32.8" cy="0.0" rx="3.1" ry="6.2" transform="rotate(270 -32.8 0.0)" fill="#2B1A12"/><ellipse cx="-29.5" cy="-14.2" rx="3.1" ry="6.2" transform="rotate(296 -29.5 -14.2)" fill="#2B1A12"/><ellipse cx="-20.4" cy="-25.6" rx="3.1" ry="6.2" transform="rotate(321 -20.4 -25.6)" fill="#2B1A12"/><ellipse cx="-7.3" cy="-31.9" rx="3.1" ry="6.2" transform="rotate(347 -7.3 -31.9)" fill="#2B1A12"/><ellipse cx="7.3" cy="-31.9" rx="3.1" ry="6.2" transform="rotate(373 7.3 -31.9)" fill="#2B1A12"/><ellipse cx="20.4" cy="-25.6" rx="3.1" ry="6.2" transform="rotate(399 20.4 -25.6)" fill="#2B1A12"/><ellipse cx="29.5" cy="-14.2" rx="3.1" ry="6.2" transform="rotate(424 29.5 -14.2)" fill="#2B1A12"/></g></g>
+<rect x="80" y="1600" width="560" height="90" rx="20" fill="#602713"/><image href="../../02-app-icon/fruitbox-app-icon-rounded.svg" x="96" y="1612" width="66" height="66"/><text x="610" y="1640" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="800" fill="#FDF8F3" text-anchor="start" direction="rtl" >اطلب من تطبيق Fruit Box</text><text x="610" y="1674" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="20" font-weight="600" fill="#71BCA8" text-anchor="start" direction="rtl" >توصيل طازج • تتبّع طلبك لحظة بلحظة</text>
+<text x="620" y="1735" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="18" font-weight="500" fill="#8A3D1F" text-anchor="middle" direction="rtl" opacity=".6">الأسعار أمثلة للعرض ويمكن تعديلها في الملف المصدري</text>
+</svg>

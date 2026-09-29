@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="540" viewBox="0 0 1080 540">
+<title>Fruit Box in-app banner</title>
+<!-- Editable layout: vectors + live text (fonts: Cairo, Poppins in /fonts). The Fruit Box logo is the original raster artwork linked as PNG. -->
+<defs>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="shadowS" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="blur40"><feGaussianBlur stdDeviation="40"/></filter>
+<filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3B1A0C" stop-opacity=".35"/><stop offset="1" stop-color="#3B1A0C" stop-opacity="0"/></radialGradient>
+<linearGradient id="smoothie" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset=".55" stop-color="#F08C8C"/><stop offset="1" stop-color="#D9606A"/></linearGradient>
+<linearGradient id="clear" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".12"/><stop offset=".8" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#ffffff" stop-opacity=".4"/></linearGradient>
+<linearGradient id="paper" x1="0" x2="1"><stop offset="0" stop-color="#E9DDCD"/><stop offset=".25" stop-color="#FDF8F3"/><stop offset=".7" stop-color="#F6EEE3"/><stop offset="1" stop-color="#DCCBB6"/></linearGradient>
+<linearGradient id="kraft" x1="0" x2="1"><stop offset="0" stop-color="#E6D6C1"/><stop offset=".5" stop-color="#F4EADF"/><stop offset="1" stop-color="#E0CDB5"/></linearGradient>
+<linearGradient id="cocoaG" x1="0" x2="1"><stop offset="0" stop-color="#4E1F0F"/><stop offset=".45" stop-color="#6E2E17"/><stop offset="1" stop-color="#4A1D0E"/></linearGradient>
+<linearGradient id="tealG" x1="0" x2="1"><stop offset="0" stop-color="#5EAE99"/><stop offset=".5" stop-color="#7CC6B2"/><stop offset="1" stop-color="#5AA792"/></linearGradient>
+<linearGradient id="glassWin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFE9E2"/><stop offset=".5" stop-color="#A9D6CA"/><stop offset="1" stop-color="#8CC3B5"/></linearGradient>
+<linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+<pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="3" fill="#71BCA8" opacity=".35"/><circle cx="28" cy="28" r="3" fill="#F39A99" opacity=".45"/></pattern>
+<pattern id="stripes" width="120" height="10" patternUnits="userSpaceOnUse"><rect width="60" height="10" fill="#71BCA8"/><rect x="60" width="60" height="10" fill="#FDF8F3"/></pattern>
+</defs>
+<rect id="background" width="1080" height="540" fill="#71BCA8"/>
+<circle cx="220" cy="300" r="300" fill="#fff" opacity=".22"/>
+<g transform="translate(230 520) scale(0.62)">
+<defs><linearGradient id="g94396577" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset="1" stop-color="#D9606A"/></linearGradient></defs>
+<ellipse cx="0" cy="6" rx="240" ry="26" fill="url(#floor)"/>
+<g transform="rotate(28 128 -486)"><rect x="108" y="-750" width="44" height="420" rx="22" fill="#C1232C"/><rect x="118" y="-734" width="10" height="380" rx="5" fill="#fff" opacity=".45"/></g>
+<path d="M-232 -456 H232 L190 -46 Q186 0 140 0 H-140 Q-186 0 -190 -46 Z" fill="url(#g94396577)"/>
+<path d="M-190 -426 L-160 -56" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".5"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564 C18 -610 106 -600 124 -542 C178 -560 258 -528 248 -444 Q248 -422 226 -422 H-226 Q-250 -422 -250 -444 Z" fill="#F7B3AE"/>
+<path d="M-250 -444 C-262 -516 -194 -546 -152 -528 C-140 -584 -62 -602 -20 -564" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(-42 -610) rotate(0) scale(0.8)">
+<path d="M0 -78 C70 -86 118 -52 112 6 C106 70 46 118 0 132 C-46 118 -106 70 -112 6 C-118 -52 -70 -86 0 -78 Z" fill="#C1232C"/>
+<path d="M-70 -40 C-60 -70 -20 -76 10 -72 C-30 -60 -56 -30 -64 10 Z" fill="#fff" opacity=".22"/>
+<g fill="#FFE9A8"><ellipse cx="-50" cy="-10" rx="6" ry="9"/><ellipse cx="-12" cy="-22" rx="6" ry="9"/><ellipse cx="30" cy="-12" rx="6" ry="9"/><ellipse cx="66" cy="-4" rx="6" ry="9"/><ellipse cx="-66" cy="30" rx="6" ry="9"/><ellipse cx="-28" cy="22" rx="6" ry="9"/><ellipse cx="12" cy="26" rx="6" ry="9"/><ellipse cx="52" cy="32" rx="6" ry="9"/><ellipse cx="-36" cy="66" rx="6" ry="9"/><ellipse cx="4" cy="70" rx="6" ry="9"/><ellipse cx="36" cy="72" rx="6" ry="9"/></g>
+<path d="M0 -70 L-70 -104 L-34 -64 L-96 -52 L-24 -48 Z M0 -70 L70 -104 L34 -64 L96 -52 L24 -48 Z M-10 -60 L0 -124 L10 -60 Z" fill="#5F973E"/></g><path d="M-336 -198 L-220 -210 L-220 -94 L-336 -82 L-298 -140 Z" fill="#602713"/><path d="M336 -198 L220 -210 L220 -94 L336 -82 L298 -140 Z" fill="#602713"/><path d="M-260 -228 Q0 -258 260 -228 L260 -112 Q0 -142 -260 -112 Z" fill="#8A3D1F"/><path d="M-180 -178 Q0 -198 180 -178" stroke="#FDF8F3" stroke-width="16" stroke-linecap="round" fill="none" opacity=".9"/></g>
+<rect x="760" y="60" width="260" height="60" rx="30" fill="#602713"/><text x="890" y="101" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="30" font-weight="800" fill="#FDF8F3" text-anchor="middle" direction="rtl" >عرض محدود</text>
+<text x="1020" y="230" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="76" font-weight="900" fill="#602713" text-anchor="start" direction="rtl" >الحبة الثانية</text><text x="1020" y="320" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="76" font-weight="900" fill="#FDF8F3" text-anchor="start" direction="rtl" >بنصف السعر</text>
+<text x="1020" y="384" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="30" font-weight="700" fill="#602713" text-anchor="start" direction="rtl" >على جميع أنواع السموذي حتى نهاية الأسبوع</text>
+<rect x="760" y="420" width="260" height="76" rx="38" fill="#C1232C"/><text x="890" y="470" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="34" font-weight="900" fill="#FDF8F3" text-anchor="middle" direction="rtl" >اطلب الآن</text>
+</svg>

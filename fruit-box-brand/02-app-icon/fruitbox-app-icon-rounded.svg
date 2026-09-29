@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Fruit Box app icon — 100% vector (no embedded raster). Inspired by the logo's
+       mint circle, pink smoothie glass, red straw, strawberry and brown ribbon. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#9AD6C6"/><stop offset="1" stop-color="#5EAE99"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#F7B3AE"/><stop offset=".55" stop-color="#F08C8C"/><stop offset="1" stop-color="#D9606A"/>
+    </linearGradient>
+    <linearGradient id="foam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD3CE"/><stop offset="1" stop-color="#F6A6A2"/>
+    </linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8424A"/><stop offset="1" stop-color="#A81C25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <circle cx="512" cy="540" r="360" fill="#FFFFFF" opacity=".16"/>
+  <!-- straw -->
+  <g transform="rotate(28 640 360)">
+    <rect x="620" y="96" width="44" height="420" rx="22" fill="#C1232C"/>
+    <rect x="630" y="112" width="10" height="380" rx="5" fill="#FFFFFF" opacity=".45"/>
+  </g>
+  <!-- glass -->
+  <path d="M280 390 H744 L702 800 Q698 846 652 846 H372 Q326 846 322 800 Z" fill="url(#glass)"/>
+  <path d="M322 420 L352 790" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" opacity=".55"/>
+  <path d="M372 430 L386 560" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity=".35"/>
+  <!-- smoothie dome -->
+  <path d="M262 402 C250 330 318 300 360 318 C372 262 450 244 492 282 C530 236 618 246 636 304 C690 286 770 318 760 402 Q760 424 738 424 H286 Q262 424 262 402 Z" fill="url(#foam)"/>
+  <path d="M300 410 C330 440 360 400 392 432 C420 458 452 414 486 440" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity=".6"/>
+  <!-- strawberry -->
+  <g transform="translate(470 236)">
+    <path d="M0 -78 C70 -86 118 -52 112 6 C106 70 46 118 0 132 C-46 118 -106 70 -112 6 C-118 -52 -70 -86 0 -78 Z" fill="url(#berry)"/>
+    <g fill="#FFE9A8">
+      <ellipse cx="-50" cy="-10" rx="6" ry="9"/><ellipse cx="-12" cy="-22" rx="6" ry="9"/><ellipse cx="30" cy="-12" rx="6" ry="9"/><ellipse cx="66" cy="-4" rx="6" ry="9"/>
+      <ellipse cx="-66" cy="30" rx="6" ry="9"/><ellipse cx="-28" cy="22" rx="6" ry="9"/><ellipse cx="12" cy="26" rx="6" ry="9"/><ellipse cx="52" cy="32" rx="6" ry="9"/>
+      <ellipse cx="-36" cy="66" rx="6" ry="9"/><ellipse cx="4" cy="70" rx="6" ry="9"/><ellipse cx="36" cy="72" rx="6" ry="9"/>
+    </g>
+    <path d="M0 -70 L-70 -104 L-34 -64 L-96 -52 L-24 -48 Z M0 -70 L70 -104 L34 -64 L96 -52 L24 -48 Z M-10 -60 L0 -124 L10 -60 Z" fill="#5F973E"/>
+    <path d="M-6 -66 L-4 -128" stroke="#3E6E27" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <!-- ribbon (echo of the logo banner, no text) -->
+  <path d="M176 648 L292 636 L292 752 L176 764 L214 706 Z" fill="#602713"/>
+  <path d="M848 648 L732 636 L732 752 L848 764 L810 706 Z" fill="#602713"/>
+  <path d="M292 752 L262 732 L292 716 Z M732 752 L762 732 L732 716 Z" fill="#3E170A"/>
+  <path d="M252 618 Q512 588 772 618 L772 734 Q512 704 252 734 Z" fill="#8A3D1F"/>
+  <path d="M252 618 Q512 588 772 618 L772 632 Q512 602 252 632 Z" fill="#B8664A" opacity=".8"/>
+  <path d="M332 668 Q512 648 692 668" stroke="#FDF8F3" stroke-width="16" stroke-linecap="round" fill="none" opacity=".9"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="910" height="610" viewBox="0 0 910 610">
+<title>Business card back 91x61mm incl. 3mm bleed</title>
+<!-- Editable layout: vectors + live text (fonts: Cairo, Poppins in /fonts). The Fruit Box logo is the original raster artwork linked as PNG. -->
+<defs>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="shadowS" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3B1A0C" flood-opacity=".22"/></filter>
+<filter id="blur40"><feGaussianBlur stdDeviation="40"/></filter>
+<filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3B1A0C" stop-opacity=".35"/><stop offset="1" stop-color="#3B1A0C" stop-opacity="0"/></radialGradient>
+<linearGradient id="smoothie" x1="0" x2="1"><stop offset="0" stop-color="#F7B3AE"/><stop offset=".55" stop-color="#F08C8C"/><stop offset="1" stop-color="#D9606A"/></linearGradient>
+<linearGradient id="clear" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".12"/><stop offset=".8" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#ffffff" stop-opacity=".4"/></linearGradient>
+<linearGradient id="paper" x1="0" x2="1"><stop offset="0" stop-color="#E9DDCD"/><stop offset=".25" stop-color="#FDF8F3"/><stop offset=".7" stop-color="#F6EEE3"/><stop offset="1" stop-color="#DCCBB6"/></linearGradient>
+<linearGradient id="kraft" x1="0" x2="1"><stop offset="0" stop-color="#E6D6C1"/><stop offset=".5" stop-color="#F4EADF"/><stop offset="1" stop-color="#E0CDB5"/></linearGradient>
+<linearGradient id="cocoaG" x1="0" x2="1"><stop offset="0" stop-color="#4E1F0F"/><stop offset=".45" stop-color="#6E2E17"/><stop offset="1" stop-color="#4A1D0E"/></linearGradient>
+<linearGradient id="tealG" x1="0" x2="1"><stop offset="0" stop-color="#5EAE99"/><stop offset=".5" stop-color="#7CC6B2"/><stop offset="1" stop-color="#5AA792"/></linearGradient>
+<linearGradient id="glassWin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFE9E2"/><stop offset=".5" stop-color="#A9D6CA"/><stop offset="1" stop-color="#8CC3B5"/></linearGradient>
+<linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+<pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="3" fill="#71BCA8" opacity=".35"/><circle cx="28" cy="28" r="3" fill="#F39A99" opacity=".45"/></pattern>
+<pattern id="stripes" width="120" height="10" patternUnits="userSpaceOnUse"><rect width="60" height="10" fill="#71BCA8"/><rect x="60" width="60" height="10" fill="#FDF8F3"/></pattern>
+</defs>
+<rect width="910" height="610" fill="#602713"/><rect width="910" height="610" fill="url(#dots)" opacity=".25"/>
+<image id="logo" href="../../01-logo/fruitbox-logo-dark-bg-version-transparent.png" x="85.0" y="86.5" width="230.0" height="187.0" preserveAspectRatio="xMidYMid meet"/>
+<text x="850" y="150" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="54" font-weight="900" fill="#FDF8F3" text-anchor="start" direction="rtl" >اسم الموظف</text><text x="850" y="202" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="30" font-weight="700" fill="#71BCA8" text-anchor="start" direction="rtl" >المسمى الوظيفي</text>
+<rect x="550" y="240" width="300" height="4" rx="2" fill="#F39A99"/>
+<circle cx="834" cy="308" r="16" fill="#71BCA8"/>
+<text x="800" y="320" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="#FDF8F3" text-anchor="end" >+000 00 000 0000</text>
+<circle cx="834" cy="366" r="16" fill="#71BCA8"/>
+<text x="800" y="378" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="#FDF8F3" text-anchor="end" >name@fruitbox.example</text>
+<circle cx="834" cy="424" r="16" fill="#71BCA8"/>
+<text x="800" y="436" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="#FDF8F3" text-anchor="end" >fruitbox.example</text>
+<circle cx="834" cy="482" r="16" fill="#71BCA8"/>
+<text x="800" y="494" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="28" font-weight="600" fill="#FDF8F3" text-anchor="start" direction="rtl" >العنوان: الحي، الشارع، المدينة</text>
+<text x="60" y="560" font-family="Cairo, 'Noto Sans Arabic', sans-serif" font-size="30" font-weight="800" fill="#F39A99" text-anchor="end" direction="rtl" >فاكهتك على مزاجك</text>
+<rect x="30" y="30" width="850" height="550" fill="none" stroke="#00AEEF" stroke-width="1" stroke-dasharray="6 6" id="trim-guide-hide-before-print"/>
+</svg>
